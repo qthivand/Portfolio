@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quentin Thivand - Portfolio GEII</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">QT</div>
+      <ul class="nav-menu">
+        <li><a href="#accueil" class="nav-link">Accueil</a></li>
+        <li><a href="#a-propos" class="nav-link">À propos</a></li>
+        <li class="dropdown">
+          <a href="#projets" class="nav-link">Projets</a>
+          <ul class="sous-menu">
+            <li><a href="#boite-noire">Boîte Noire Moto</a></li>
+            <li><a href="#domotique-fpga">Domotique FPGA</a></li>
+            <li><a href="#serrure-rfid">Serrure RFID</a></li>
+            <li><a href="#bass-boost">Bass/High Boost</a></li>
+            <li><a href="#autres-projets">Autres Projets</a></li>
+          </ul>
+        </li>
+        <li><a href="#competences" class="nav-link">Compétences</a></li>
+        <li><a href="#parcours" class="nav-link">Parcours</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+ 
+  <section class="hero" id="accueil">
+    <div class="hero-background">
+      <div class="grid-overlay"></div>
+      <div class="glow-orb orb-1"></div>
+      <div class="glow-orb orb-2"></div>
+    </div>
+    
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="label">Étudiant 2026</div>
+        <h1 class="hero-title">
+          <span class="name-highlight">Quentin</span>
+          <span class="name-main">Thivand</span>
+        </h1>
+        <p class="hero-subtitle">
+          Étudiant en BUT Génie Électrique<br>
+          et Informatique Industrielle
+        </p>
+        <p class="hero-description">
+          Parcours Électronique et Systèmes Embarqués<br>
+          IUT Annecy | Promotion 2024-2027
+        </p>
+        
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">8+</span>
+            <span class="stat-text">Projets réalisés</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">BUT 2</span>
+            <span class="stat-text">En cours</span>
+          </div>
+        </div>
+        
+        <div class="cta-container">
+          <a href="Cv ThivandQuentin.pdf" target="_blank" class="btn btn-primary">
+            <span class="btn-icon">📄</span>
+            <span>Télécharger mon CV</span>
+            <span class="btn-arrow">→</span>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Me contacter</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="info-card">
+          <div class="info-header">
+            <h3>Informations</h3>
+          </div>
+          <div class="info-grid">
+            <div class="info-item">
+              <span class="info-icon">🎓</span>
+              <div class="info-content">
+                <span class="info-label">Formation</span>
+                <span class="info-value">BUT GEII</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">🔧</span>
+              <div class="info-content">
+                <span class="info-label">Spécialité</span>
+                <span class="info-value">Électronique & Systèmes Embarqués</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">📍</span>
+              <div class="info-content">
+                <span class="info-label">Localisation</span>
+                <span class="info-value">Thorens-Glières (74)</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">🚗</span>
+              <div class="info-content">
+                <span class="info-label">Permis</span>
+                <span class="info-value">B & A2</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="stage-alert">
+            <div class="alert-icon">🔍</div>
+            <div class="alert-content">
+              <strong>Recherche de Stage</strong>
+              <p>Du 30 mars au 12 juin 2026</p>
+              <p class="alert-small">Électronique | Systèmes Embarqués</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="about-me-section" id="a-propos">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-number">01.</span>
+        À Propos de Moi
+      </h2>
+      
+      <div class="about-me-content">
+        <div class="about-me-text">
+          <h3>Qui suis-je ?</h3>
+          <p>
+            Passionné par l'électronique et les nouvelles technologies depuis mon plus jeune âge, j'ai toujours été 
+            fasciné par le fonctionnement des systèmes embarqués et la conception de circuits. Cette curiosité naturelle 
+            m'a poussé à explorer le monde de l'électronique à travers de nombreux projets personnels, de la simple LED 
+            clignotante à des systèmes plus complexes comme ma boîte noire pour moto.
+          </p>
+          
+          <h3>Pourquoi le BUT GEII ?</h3>
+          <p>
+            J'ai choisi le parcours Électronique et Systèmes Embarqués du BUT GEII car il combine parfaitement mes 
+            deux passions : <strong>l'électronique hardware</strong> et la <strong>programmation embarquée</strong>. 
+            Cette formation me permet d'acquérir des compétences, de la conception de circuits PCB sur Altium 
+            Designer à la programmation bas niveau de microcontrôleurs STM32, en passant par le traitement du signal 
+            et les communications sans fil.
+          </p>
+          
+          <h3>Mes passions</h3>
+          <div class="passions-grid">
+            <div class="passion-item">
+              <span class="passion-icon">🏍️</span>
+              <div>
+                <h4>Moto</h4>
+                <p>Passionné de deux-roues et de voitures, ce qui m'a inspiré pour mon projet de boîte noire embarquée</p>
+              </div>
+            </div>
+            
+            <div class="passion-item">
+              <span class="passion-icon">🔬</span>
+              <div>
+                <h4>Électronique</h4>
+                <p>Conception de circuits, soudure, PCB design et prototypage de systèmes</p>
+              </div>
+            </div>
+            
+            <div class="passion-item">
+              <span class="passion-icon">💡</span>
+              <div>
+                <h4>Domotique & IoT</h4>
+                <p>Automatisation, objets connectés et systèmes intelligents pour la maison</p>
+              </div>
+            </div>
+            
+            <div class="passion-item">
+              <span class="passion-icon">⚙️</span>
+              <div>
+                <h4>Systèmes Embarqués</h4>
+                <p>Programmation de microcontrôleurs, FPGA et optimisation temps réel</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="about-section" id="competences">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-number">02.</span>
+        Compétences Techniques
+      </h2>
+      
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">⚡</div>
+          <h3>Électronique</h3>
+          <p>Conception et dimensionnement de circuits électriques et électroniques, filtrage analogique et numérique</p>
+          <div class="skill-tags">
+            <span class="tag">Altium Designer</span>
+            <span class="tag">PCB Design</span>
+            <span class="tag">Filtrage analogique</span>
+            <span class="tag">Habilitation B1V</span>
+          </div>
+        </div>
+        
+        <div class="skill-card">
+          <div class="skill-icon">🔧</div>
+          <h3>Systèmes Embarqués</h3>
+          <p>Programmation microcontrôleurs, manipulation de registres, communication SPI/I2C, ADC et DMA</p>
+          <div class="skill-tags">
+            <span class="tag">STM32 (M0+/M4)</span>
+            <span class="tag">Filtrage numérique</span>
+            <span class="tag">Arduino/ATMega</span>
+            <span class="tag">STM32CubeIDE</span>
+            <span class="tag">FPGA DE10-Lite</span>
+            <span class="tag">Communication BT/WiFi</span>
+          </div>
+        </div>
+        
+        <div class="skill-card">
+          <div class="skill-icon">💻</div>
+          <h3>Programmation</h3>
+          <p>Développement logiciel embarqué et applications industrielles</p>
+          <div class="skill-tags">
+            <span class="tag">C/C++</span>
+            <span class="tag">Python</span>
+            <span class="tag">C#</span>
+            <span class="tag">VHDL/Verilog</span>
+            <span class="tag">LabVIEW</span>
+            <span class="tag">HTML/CSS</span>
+          </div>
+        </div>
+        
+        <div class="skill-card">
+          <div class="skill-icon">🏭</div>
+          <h3>Automatisme & Industrie</h3>
+          <p>Programmation automates, supervision et réseaux industriels</p>
+          <div class="skill-tags">
+            <span class="tag">SFC</span>
+            <span class="tag">Ladder</span>
+            <span class="tag">Structured Text</span>
+            <span class="tag">MATLAB</span>
+            <span class="tag">CompactRIO</span>
+          </div>
+        </div>
+        
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>Réseaux & Communication</h3>
+          <p>Configuration et gestion de réseaux industriels</p>
+          <div class="skill-tags">
+            <span class="tag">Routeurs Cisco</span>
+            <span class="tag">Protocoles industriels</span>
+          </div>
+        </div>
+        
+        <div class="skill-card">
+          <div class="skill-icon">🗣️</div>
+          <h3>Langues</h3>
+          <p></p>
+          <div class="skill-tags">
+            <span class="tag">Français (Natif)</span>
+            <span class="tag">Anglais (A2)</span>
+            <span class="tag">Espagnol (A1)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="projects-section" id="projets">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-number">03.</span>
+        Projets Réalisés
+      </h2>
+      
+    
+      <div class="featured-project" id="boite-noire">
+        <div class="project-featured-badge">Projet Principal</div>
+        <div class="project-featured-content">
+          <div class="project-featured-text">
+            <h3>Boîte Noire Moto - SAE 2025/2026</h3>
+            <p class="project-subtitle">Système embarqué d'acquisition de données pour deux-roues</p>
+            <p class="project-description">
+              Conception complète d'une boîte noire embarquée pour motos et vélos permettant l'acquisition 
+              et le traitement en temps réel de données d'un accéléromètre ADXL335 avec affichage sur bandeau LED.
+            </p>
+            
+            <div class="project-features">
+              <h4>Réalisations techniques :</h4>
+              <ul>
+                <li><strong>Conception électronique :</strong> Chaîne d'acquisition complète, PCB sur Altium Designer</li>
+                <li><strong>Programmation STM32 :</strong> Configuration registres, ADC en interruption + DMA</li>
+                <li><strong>Traitement du signal :</strong> Filtrage numérique, calibration accéléromètre</li>
+                <li><strong>Communications :</strong> SPI, Bluetooth pour transmission de données</li>
+                <li><strong>Interface utilisateur :</strong> Bandeau LED RGB + moniteur série</li>
+                <li><strong>Documentation :</strong> Dossier de conception, schémas de câblage, tests unitaires</li>
+              </ul>
+            </div>
+            
+            <div class="tech-stack">
+              <span class="tech-tag">STM32 L073RZ</span>
+              <span class="tech-tag">ADXL335</span>
+              <span class="tech-tag">Altium Designer</span>
+              <span class="tech-tag">C/C++</span>
+              <span class="tech-tag">ADC + DMA</span>
+              <span class="tech-tag">SPI</span>
+              <span class="tech-tag">Bluetooth</span>
+            </div>
+            
+            <div class="project-docs">
+              <a href="portfolio_BOITENOIRE.pdf" target="_blank" class="doc-link">
+                <span class="doc-icon">📄</span>
+                <span>Portfolio complet du projet</span>
+              </a>
+            </div>
+            <div class="project-docs">
+              <a href="https://drive.google.com/drive/folders/1EEsFUH7ouYpFfNbyYrseFCg-bqPuBhWu?usp=drive_link" target="_blank" class="doc-link" download>
+                <span class="doc-icon">📁</span>
+                <span>Dossier de fabrication</span>
+              </a>
+            </div>
+          </div>
+          
+          <div class="project-featured-visual">
+            <div class="project-image">
+              <img src="PhotoBN.png" alt="Système d'arrosage automatique" />
+
+              <p class="video-caption">Démonstration du système avec affichage LED et détection d'inclinaison</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+   
+      <div class="featured-project current-project" id="domotique-fpga">
+        <div class="project-featured-badge" style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);">Projet en Cours</div>
+        <div class="project-featured-content">
+          <div class="project-featured-text">
+            <h3>Système de Domotisation FPGA + Arduino</h3>
+            <p class="project-subtitle">Automatisation intelligente via FPGA et microcontrôleur</p>
+            <p class="project-description">
+              Développement d'un système de domotique combinant un FPGA DE10-Lite et une carte Arduino pour créer 
+              une solution d'automatisation domestique performante et modulaire. Le FPGA gère le traitement parallèle 
+              et les tâches temps réel critiques, tandis que l'Arduino assure l'interface avec les capteurs.
+            </p>
+            
+            <div class="project-features">
+              <h4>Objectifs du projet :</h4>
+              <ul>
+                <li><strong>Architecture hybride :</strong> FPGA pour traitement temps réel + Arduino pour I/O</li>
+                <li><strong>Gestion multi-capteurs :</strong> Température, lumière, bruit , humidité</li>
+                <li><strong>Actionneurs intelligents :</strong> Contrôle d'éclairage, volets, chauffage</li>
+                <li><strong>Communication :</strong> Protocole série entre FPGA et Arduino, interface utilisateur, Infra Rouge, Bluetooth</li>
+                <li><strong>Logique programmable :</strong> Scénarios d'automatisation personnalisables</li>
+                <li><strong>Optimisation :</strong> Traitement parallèle sur FPGA pour une réactivité maximale</li>
+              </ul>
+            </div>
+            
+            <div class="tech-stack">
+              <span class="tech-tag">FPGA DE10-Lite</span>
+              <span class="tech-tag">Arduino</span>
+              <span class="tech-tag">VHDL/Verilog</span>
+              <span class="tech-tag">C/C++</span>
+              <span class="tech-tag">Logique combinatoire</span>
+              <span class="tech-tag">Protocoles série</span>
+            </div>
+            
+            <div class="project-status">
+              <div class="status-badge">
+                <span class="status-dot"></span>
+                <span>En développement actif</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-featured-visual">
+            <div class="visual-placeholder">
+              <div class="placeholder-icon">🏠</div>
+              <p>Système de domotique<br>en développement</p>
+              <small>Photos et schémas à venir<br>lors de l'avancement du projet</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="projects-grid">
+        <div class="project-card" id="serrure-rfid">
+          <div class="project-label">Systèmes Embarqués</div>
+          <h3>Serrure RFID</h3>
+          <p>Système de contrôle d'accès par carte RFID avec gestion de relays</p>
+          <ul class="project-tech-list">
+            <li>Programmation Arduino</li>
+            <li>Manipulation de registres</li>
+            <li>Gestion de relays</li>
+            <li>Système de sécurité</li>
+          </ul>
+          <div class="project-docs" target="_blank" class="doc-link">
+            <a href="Projet_Sae_RFID_Thivand_Buisson.zip" target="_blank" class="doc-link" download>
+              <span class="doc-icon">📁</span>
+              <span>Dossier d'étude</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card" id="bass-boost">
+          <div class="project-label">Électronique Analogique</div>
+          <h3>Bass Boost / High Boost</h3>
+          <p>Conception de filtres audio analogiques pour amplification sélective de fréquences</p>
+          <ul class="project-tech-list">
+            <li>Filtrage analogique</li>
+            <li>Conception de circuits</li>
+            <li>Traitement du signal audio</li>
+          </ul>
+          <div class="project-docs" target="_blank" class="doc-link">
+            <a href="PrjBassBoost_Elec_2024-2025_THIVAND_DELIEUVIN.pdf" target="_blank" class="doc-link">
+              <span class="doc-icon">📄</span>
+              <span>Document d'étude</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-label">Électronique de Puissance</div>
+          <h3>Amplificateur Audio</h3>
+          <p>Réalisation d'un amplificateur de puissance pour applications audio</p>
+          <ul class="project-tech-list">
+            <li>Amplification de puissance</li>
+            <li>Dimensionnement thermique</li>
+            <li>Tests de performance</li>
+            <br>
+          </ul>
+          <div class="project-docs" target="_blank" class="doc-link">
+            <a href="compte rendu saé amplis audio.pdf" target="_blank" class="doc-link">
+              <span class="doc-icon">📄</span>
+              <span>Document d'étude</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-label">Automatisme</div>
+          <h3>Distributeur de Boisson</h3>
+          <p>Système automatisé de distribution avec gestion de commandes</p>
+          <ul class="project-tech-list">
+            <li>Câblage</li>
+            <li>Programmation microcontrôleur</li>
+            <li>Interface homme-machine</li>
+          </ul>
+          <div class="project-image-placeholder">
+            <span>📷 Photo à venir</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-label">IoT</div>
+          <h3>Arrosage Automatique</h3>
+          <p>Système intelligent d'arrosage avec capteurs et microcontrôleurs</p>
+          <ul class="project-tech-list">
+            <li>Découverte microcontrôleurs</li>
+            <li>Capteurs d'humidité</li>
+            <li>Automatisation</li>
+          </ul>
+          <div class="project-image">
+            <img src="FPGA.png" alt="Système d'arrosage automatique" />
+          </div>
+        </div>
+
+
+        <div class="project-card">
+          <div class="project-label">Électronique</div>
+          <h3>Thermomètre Digital</h3>
+          <p>Conception d'un thermomètre numérique avec affichage</p>
+          <ul class="project-tech-list">
+            <li>Soudure de composants</li>
+            <li>Acquisition de température</li>
+            <li>Affichage numérique</li>
+          </ul>
+          <div class="project-image">
+            <img src="thermo2.jpg" alt="Thermomètre digital" />
+          </div>
+        </div>
+      </div>
+      </div>
+      </section>
+
+
+  <section class="timeline-section" id="parcours">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-number">04.</span>
+        Parcours & Expériences
+      </h2>
+      
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-marker formation"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024 - 2027</span>
+            <h3>BUT Génie Électrique et Informatique Industrielle</h3>
+            <p class="timeline-subtitle">Parcours Électronique et Systèmes Embarqués</p>
+            <p class="timeline-location">IUT d'Annecy</p>
+            <p class="timeline-description">
+              Formation complète en électronique, systèmes embarqués, automatisme et informatique industrielle.
+              Projets techniques, stages en entreprise et développement de compétences professionnelles.
+            </p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker formation"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2021 - 2024</span>
+            <h3>BAC Général et Technologique STI2D</h3>
+            <p class="timeline-subtitle">Mention Assez Bien</p>
+            <p class="timeline-location">Lycée Louis Lachenal - Argonay</p>
+          </div>
+        </div>
+        
+
+        <div class="timeline-item">
+          <div class="timeline-marker experience"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Juillet 2025 - En cours</span>
+            <h3>Employé Polyvalent - Caissier</h3>
+            <p class="timeline-location">Auchan</p>
+            <p class="timeline-description">
+              Gestion de caisse, caisse libre-service et mise en rayon.
+            </p>
+            <div class="competences-acquises">
+              <span class="comp-tag">Relations clients</span>
+              <span class="comp-tag">Rigueur</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker experience"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Juin - Juillet 2024</span>
+            <h3>Employé Polyvalent Restauration</h3>
+            <p class="timeline-location">Il Veni Vidi Pizzi - Groisy</p>
+            <p class="timeline-description">
+              Préparation, service restauration, plonge et cuisine.
+            </p>
+            <div class="competences-acquises">
+              <span class="comp-tag">Esprit d'équipe</span>
+              <span class="comp-tag">Rigueur</span>
+              <span class="comp-tag">Règles d'hygiène</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker experience"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Sept - Nov 2023</span>
+            <h3>Employé Polyvalent Restauration</h3>
+            <p class="timeline-location">Beaujour et Bonsoir - Villy-le-Pelloux</p>
+            <p class="timeline-description">
+              Préparation service restauration et plonge.
+            </p>
+            <div class="competences-acquises">
+              <span class="comp-tag">Esprit d'équipe</span>
+              <span class="comp-tag">Règles d'hygiène</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker experience"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">21 - 25 Février 2022</span>
+            <h3>Stage d'Observation</h3>
+            <p class="timeline-location">M2O - Argonay</p>
+            <p class="timeline-description">
+              Découverte des différents services d'entreprise : RH, commercial, chef de projet, 
+              ingénieur mécanique, ingénieur automatisme, atelier.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-number">05.</span>
+        Me Contacter
+      </h2>
+      
+      <div class="contact-content">
+        <div class="contact-intro">
+          <h3>Recherche de Stage</h3>
+          <p class="contact-text">
+            Je suis actuellement à la recherche d'un <strong>stage de 10 semaines</strong> du <strong>30 mars au 12 juin 2026</strong> 
+            dans le domaine de l'électronique et des systèmes embarqués.
+          </p>
+          <p class="contact-interests">
+            <strong>Domaines d'intérêt :</strong> Électronique embarquée, IoT, Systèmes temps réel, 
+            Conception de circuits, Programmation de microcontrôleurs STM32, Communications sans fil
+          </p>
+        </div>
+        
+        <div class="contact-methods">
+          <a href="mailto:q.thivand@gmail.com" class="contact-card">
+            <span class="contact-icon">✉️</span>
+            <div class="contact-info">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">q.thivand@gmail.com</span>
+            </div>
+          </a>
+          
+          <a href="tel:+33768811307" class="contact-card">
+            <span class="contact-icon">📱</span>
+            <div class="contact-info">
+              <span class="contact-label">Téléphone</span>
+              <span class="contact-value">07 68 81 13 07</span>
+            </div>
+          </a>
+          
+          <div class="contact-card">
+            <span class="contact-icon">📍</span>
+            <div class="contact-info">
+              <span class="contact-label">Localisation</span>
+              <span class="contact-value">Thorens-Glières (74570)</span>
+            </div>
+          </div>
+          
+          <a href="mailto:quentin.thivand@etu.univ-savoie.fr" class="contact-card contact-card-email">
+            <span class="contact-icon">🎓</span>
+            <div class="contact-info">
+              <span class="contact-label">Email universitaire</span>
+              <span class="contact-value contact-email-uni">quentin.thivand@<wbr>etu.univ-savoie.fr</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="contact-cta">
+          <a href="Cv ThivandQuentin.pdf" target="_blank" class="btn btn-primary">
+            <span class="btn-icon">📄</span>
+            <span>Télécharger mon CV</span>
+          </a>
+          <a href="portfolio_BOITENOIRE.pdf" target="_blank" class="btn btn-secondary">
+            <span class="btn-icon">📄</span>
+            <span>Voir mon portfolio complet</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h4>Quentin Thivand</h4>
+          <p>Étudiant BUT GEII - Électronique et Systèmes Embarqués</p>
+        </div>
+        <div class="footer-links">
+          <a href="#accueil">Accueil</a>
+          <a href="#a-propos">À propos</a>
+          <a href="#projets">Projets</a>
+          <a href="#competences">Compétences</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Quentin Thivand. Portfolio réalisé en HTML/CSS</p>
+        <p class="footer-tech">Conçu avec passion pour l'électronique et les systèmes embarqués</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
