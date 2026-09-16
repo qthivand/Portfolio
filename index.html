@@ -21,7 +21,7 @@
           <a href="#projets" class="nav-link">Projets</a>
           <ul class="sous-menu">
             <li><a href="#boite-noire">Boîte Noire Moto</a></li>
-            <li><a href="#domotique-fpga">Domotique FPGA</a></li>
+            <li><a href="#bras-robot">Bras Robot</a></li>
             <li><a href="#serrure-rfid">Serrure RFID</a></li>
             <li><a href="#bass-boost">Bass/High Boost</a></li>
             <li><a href="#autres-projets">Autres Projets</a></li>
@@ -64,7 +64,7 @@
             <span class="stat-text">Projets réalisés</span>
           </div>
           <div class="stat-item">
-            <span class="stat-number">BUT 2</span>
+            <span class="stat-number">BUT 3</span>
             <span class="stat-text">En cours</span>
           </div>
         </div>
@@ -121,7 +121,7 @@
             <div class="alert-icon">🔍</div>
             <div class="alert-content">
               <strong>Recherche de Stage</strong>
-              <p>Du 30 mars au 12 juin 2026</p>
+              <p>Du 1er mars au 20 juin 2027 (16 semaines)</p>
               <p class="alert-small">Électronique | Systèmes Embarqués</p>
             </div>
           </div>
@@ -349,37 +349,39 @@
       </div>
       
    
-      <div class="featured-project current-project" id="domotique-fpga">
+      <div class="featured-project current-project" id="bras-robot">
         <div class="project-featured-badge" style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);">Projet en Cours</div>
         <div class="project-featured-content">
           <div class="project-featured-text">
-            <h3>Système de Domotisation FPGA + Arduino</h3>
-            <p class="project-subtitle">Automatisation intelligente via FPGA et microcontrôleur</p>
+            <h3>Bras Robot Fait Maison</h3>
+            <p class="project-subtitle">Bras robotique 4 axes piloté par STM32, contrôlable via un site web</p>
             <p class="project-description">
-              Développement d'un système de domotique combinant un FPGA DE10-Lite et une carte Arduino pour créer 
-              une solution d'automatisation domestique performante et modulaire. Le FPGA gère le traitement parallèle 
-              et les tâches temps réel critiques, tandis que l'Arduino assure l'interface avec les capteurs.
+              Conception et réalisation d'un bras robot 4 axes de A à Z : châssis dessiné et imprimé en 3D par mes soins, 
+              motorisation NEMA 17 + réducteurs, pilotage des moteurs pas à pas via des drivers TMC2209 depuis une 
+              carte Nucleo STM32F334R8. Un module ESP32 assure la liaison Bluetooth et communique avec la STM32 
+              en série/USART, le tout piloté depuis un site web de contrôle du bras.
             </p>
             
             <div class="project-features">
-              <h4>Objectifs du projet :</h4>
+              <h4>Réalisations techniques :</h4>
               <ul>
-                <li><strong>Architecture hybride :</strong> FPGA pour traitement temps réel + Arduino pour I/O</li>
-                <li><strong>Gestion multi-capteurs :</strong> Température, lumière, bruit , humidité</li>
-                <li><strong>Actionneurs intelligents :</strong> Contrôle d'éclairage, volets, chauffage</li>
-                <li><strong>Communication :</strong> Protocole série entre FPGA et Arduino, interface utilisateur, Infra Rouge, Bluetooth</li>
-                <li><strong>Logique programmable :</strong> Scénarios d'automatisation personnalisables</li>
-                <li><strong>Optimisation :</strong> Traitement parallèle sur FPGA pour une réactivité maximale</li>
+                <li><strong>Mécanique :</strong> Châssis conçu en CAO et imprimé en 3D, 4 axes NEMA 17 + réducteurs</li>
+                <li><strong>Pilotage moteurs :</strong> Drivers TMC2209 commandés en UART depuis la STM32</li>
+                <li><strong>Carte de commande :</strong> Nucleo STM32F334R8</li>
+                <li><strong>Connectivité :</strong> ESP32 en liaison Série/USART avec la STM32, Bluetooth</li>
+                <li><strong>Interface :</strong> Site web de contrôle du bras en temps réel</li>
               </ul>
             </div>
             
             <div class="tech-stack">
-              <span class="tech-tag">FPGA DE10-Lite</span>
-              <span class="tech-tag">Arduino</span>
-              <span class="tech-tag">VHDL/Verilog</span>
+              <span class="tech-tag">STM32 Nucleo F334R8</span>
+              <span class="tech-tag">ESP32</span>
+              <span class="tech-tag">TMC2209</span>
+              <span class="tech-tag">NEMA 17</span>
+              <span class="tech-tag">UART</span>
+              <span class="tech-tag">Bluetooth</span>
+              <span class="tech-tag">Impression 3D</span>
               <span class="tech-tag">C/C++</span>
-              <span class="tech-tag">Logique combinatoire</span>
-              <span class="tech-tag">Protocoles série</span>
             </div>
             
             <div class="project-status">
@@ -392,9 +394,9 @@
           
           <div class="project-featured-visual">
             <div class="visual-placeholder">
-              <div class="placeholder-icon">🏠</div>
-              <p>Système de domotique<br>en développement</p>
-              <small>Photos et schémas à venir<br>lors de l'avancement du projet</small>
+              <div class="placeholder-icon">🦾</div>
+              <p>Bras robot<br>en développement</p>
+              <small>Photo à venir<br>lors de l'avancement du projet</small>
             </div>
           </div>
         </div>
@@ -631,7 +633,7 @@
         <div class="contact-intro">
           <h3>Recherche de Stage</h3>
           <p class="contact-text">
-            Je suis actuellement à la recherche d'un <strong>stage de 10 semaines</strong> du <strong>30 mars au 12 juin 2026</strong> 
+            Je suis actuellement à la recherche d'un <strong>stage de 16 semaines</strong> du <strong>1er mars au 20 juin 2027</strong> 
             dans le domaine de l'électronique et des systèmes embarqués.
           </p>
           <p class="contact-interests">
