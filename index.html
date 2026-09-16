@@ -354,18 +354,20 @@
         <div class="project-featured-content">
           <div class="project-featured-text">
             <h3>Bras Robot Fait Maison</h3>
-            <p class="project-subtitle">Bras robotique 4 axes piloté par STM32, contrôlable via un site web</p>
+            <p class="project-subtitle">Bras robotique 5 axes piloté par STM32, contrôlable via un site web</p>
             <p class="project-description">
-              Conception et réalisation d'un bras robot 4 axes de A à Z : châssis dessiné et imprimé en 3D par mes soins, 
-              motorisation NEMA 17 + réducteurs, pilotage des moteurs pas à pas via des drivers TMC2209 depuis une 
-              carte Nucleo STM32F334R8. Un module ESP32 assure la liaison Bluetooth et communique avec la STM32 
-              en série/USART, le tout piloté depuis un site web de contrôle du bras.
+              Conception et réalisation d'un bras robot 5 axes de A à Z : châssis dessiné et imprimé en 3D par mes soins, 
+              4 axes motorisés en NEMA 17 + réducteurs et un 5ème axe en servo-moteur MG996R pour la pince, pilotage 
+              des moteurs pas à pas via des drivers TMC2209 depuis une carte Nucleo STM32F334R8. Un module ESP32 
+              assure la liaison Bluetooth et communique avec la STM32 en série/USART, le tout piloté depuis un site 
+              web de contrôle du bras.
             </p>
             
             <div class="project-features">
               <h4>Réalisations techniques :</h4>
               <ul>
-                <li><strong>Mécanique :</strong> Châssis conçu en CAO et imprimé en 3D, 4 axes NEMA 17 + réducteurs</li>
+                <li><strong>Mécanique :</strong> Châssis conçu en CAO et imprimé en 3D, 5 axes au total</li>
+                <li><strong>Motorisation :</strong> 4 axes NEMA 17 + réducteurs, 1 servo-moteur MG996R pour la pince</li>
                 <li><strong>Pilotage moteurs :</strong> Drivers TMC2209 commandés en UART depuis la STM32</li>
                 <li><strong>Carte de commande :</strong> Nucleo STM32F334R8</li>
                 <li><strong>Connectivité :</strong> ESP32 en liaison Série/USART avec la STM32, Bluetooth</li>
@@ -378,6 +380,7 @@
               <span class="tech-tag">ESP32</span>
               <span class="tech-tag">TMC2209</span>
               <span class="tech-tag">NEMA 17</span>
+              <span class="tech-tag">Servo MG996R</span>
               <span class="tech-tag">UART</span>
               <span class="tech-tag">Bluetooth</span>
               <span class="tech-tag">Impression 3D</span>
@@ -404,6 +407,18 @@
       
 
       <div class="projects-grid">
+        <div class="project-card" id="adm-pdm">
+          <div class="project-label">Stage - Hoggar Solution</div>
+          <h3>ARKADIA Directory Manager (ADM)</h3>
+          <p>PDM (Product Data Management) développé pendant mon stage, gérant les fichiers SolidWorks/CATIA/CREO pour ARKADIA, Hoggar et Biossun</p>
+          <ul class="project-tech-list">
+            <li>C#</li>
+            <li>WebView2</li>
+            <li>Base de données Access/SQL</li>
+            <li>Interface HTML/CSS/JS</li>
+          </ul>
+        </div>
+
         <div class="project-card" id="serrure-rfid">
           <div class="project-label">Systèmes Embarqués</div>
           <h3>Serrure RFID</h3>
