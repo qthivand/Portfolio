@@ -1,4 +1,3 @@
-
 :root {
 
   --bg-primary: #0A0A0F;
@@ -1055,8 +1054,8 @@ body {
 }
 
 .timeline-marker.stage {
-  border-color: #00F0FF;
-  background: #00F0FF;
+  border-color: var(--accent-secondary);
+  background: var(--accent-secondary);
 }
 
 .timeline-content {
