@@ -919,6 +919,20 @@ body {
   transition: transform 0.3s ease;
 }
 
+/* ADM project: screenshot is wide/landscape, give it the full card width instead of the narrow side column */
+#adm-pdm .project-featured-content {
+  grid-template-columns: 1fr;
+}
+
+#adm-pdm .project-featured-visual {
+  margin-top: 1rem;
+}
+
+#adm-pdm .project-image img {
+  width: 100%;
+  max-height: none;
+}
+
 .project-card:hover .project-image img {
   transform: scale(1.05);
 }
