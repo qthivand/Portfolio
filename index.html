@@ -60,7 +60,7 @@
         
         <div class="hero-stats">
           <div class="stat-item">
-            <span class="stat-number">8+</span>
+            <span class="stat-number">9+</span>
             <span class="stat-text">Projets réalisés</span>
           </div>
           <div class="stat-item">
@@ -228,6 +228,7 @@
             <span class="tag">STM32CubeIDE</span>
             <span class="tag">FPGA DE10-Lite</span>
             <span class="tag">Communication BT/WiFi</span>
+            <span class="tag">Programmation bas niveau</span>
           </div>
         </div>
         
@@ -255,6 +256,17 @@
             <span class="tag">Structured Text</span>
             <span class="tag">MATLAB</span>
             <span class="tag">CompactRIO</span>
+          </div>
+        </div>
+        
+        <div class="skill-card">
+          <div class="skill-icon">🖨️</div>
+          <h3>Mécanique & Prototypage</h3>
+          <p>Conception de pièces mécaniques et réalisation de prototypes fonctionnels</p>
+          <div class="skill-tags">
+            <span class="tag">CAO</span>
+            <span class="tag">Impression 3D</span>
+            <span class="tag">Conception mécanique</span>
           </div>
         </div>
         
@@ -354,20 +366,20 @@
         <div class="project-featured-content">
           <div class="project-featured-text">
             <h3>Bras Robot Fait Maison</h3>
-            <p class="project-subtitle">Bras robotique 5 axes piloté par STM32, contrôlable via un site web</p>
+            <p class="project-subtitle">Bras robotique 6 axes piloté par STM32, contrôlable via un site web</p>
             <p class="project-description">
-              Conception et réalisation d'un bras robot 5 axes de A à Z : châssis dessiné et imprimé en 3D par mes soins, 
-              4 axes motorisés en NEMA 17 + réducteurs et un 5ème axe en servo-moteur MG996R pour la pince, pilotage 
-              des moteurs pas à pas via des drivers TMC2209 depuis une carte Nucleo STM32F334R8. Un module ESP32 
-              assure la liaison Bluetooth et communique avec la STM32 en série/USART, le tout piloté depuis un site 
-              web de contrôle du bras.
+              Conception et réalisation d'un bras robot 6 axes de A à Z : châssis dessiné et imprimé en 3D par mes soins, 
+              4 axes motorisés en NEMA 17 + réducteurs, et 2 axes sur la pince (ouverture/fermeture + roulis) entraînés 
+              par des servo-moteurs MG996R, pilotage des moteurs pas à pas via des drivers TMC2209 depuis une carte 
+              Nucleo STM32F334R8. Un module ESP32 assure la liaison Bluetooth et communique avec la STM32 en 
+              série/USART, le tout piloté depuis un site web de contrôle du bras.
             </p>
             
             <div class="project-features">
               <h4>Réalisations techniques :</h4>
               <ul>
-                <li><strong>Mécanique :</strong> Châssis conçu en CAO et imprimé en 3D, 5 axes au total</li>
-                <li><strong>Motorisation :</strong> 4 axes NEMA 17 + réducteurs, 1 servo-moteur MG996R pour la pince</li>
+                <li><strong>Mécanique :</strong> Châssis conçu en CAO et imprimé en 3D, 6 axes au total</li>
+                <li><strong>Motorisation :</strong> 4 axes NEMA 17 + réducteurs, pince en 2 axes (ouverture/fermeture + roulis) via servo-moteurs MG996R</li>
                 <li><strong>Pilotage moteurs :</strong> Drivers TMC2209 commandés en UART depuis la STM32</li>
                 <li><strong>Carte de commande :</strong> Nucleo STM32F334R8</li>
                 <li><strong>Connectivité :</strong> ESP32 en liaison Série/USART avec la STM32, Bluetooth</li>
@@ -396,10 +408,8 @@
           </div>
           
           <div class="project-featured-visual">
-            <div class="visual-placeholder">
-              <div class="placeholder-icon">🦾</div>
-              <p>Bras robot<br>en développement</p>
-              <small>Photo à venir<br>lors de l'avancement du projet</small>
+            <div class="project-image">
+              <img src="bras_robot.jpg" alt="Bras robot fait maison" />
             </div>
           </div>
         </div>
@@ -410,7 +420,7 @@
         <div class="project-card" id="adm-pdm">
           <div class="project-label">Stage - Hoggar Solution</div>
           <h3>ARKADIA Directory Manager (ADM)</h3>
-          <p>PDM (Product Data Management) développé pendant mon stage, gérant les fichiers SolidWorks/CATIA/CREO pour ARKADIA, Hoggar et Biossun</p>
+          <p>Bien plus qu'un simple PDM : gestion des fichiers CAO (SolidWorks/CATIA/CREO), système de gestion d'affaires, système de tickets de modification en cas de non-conformité CAO, et accès centralisé à tous les documents utiles à la conception, pour ARKADIA, Hoggar et Biossun</p>
           <ul class="project-tech-list">
             <li>C#</li>
             <li>WebView2</li>
