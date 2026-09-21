@@ -1374,3 +1374,311 @@ body {
     justify-content: center;
   }
 }
+
+
+/* =====================================================================
+   MODE DÉROULANT
+   Les détails (descriptions, réalisations, documents) sont repliés par
+   défaut : le recruteur voit d'abord titre + résumé + mots-clés, et
+   déplie seulement ce qui l'intéresse.
+   ===================================================================== */
+
+/* ---- Bouton "Voir les détails" (projets, cartes, parcours) ---- */
+.deroulant {
+  margin-top: 1.25rem;
+  interpolate-size: allow-keywords;
+}
+
+.deroulant-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.deroulant-btn::-webkit-details-marker {
+  display: none;
+}
+
+/* chevron qui pivote à l'ouverture */
+.deroulant-btn::after {
+  content: "";
+  width: 0.42rem;
+  height: 0.42rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 0.25s ease;
+}
+
+.deroulant[open] > .deroulant-btn::after {
+  transform: translateY(2px) rotate(-135deg);
+}
+
+.deroulant-btn:hover,
+.deroulant[open] > .deroulant-btn {
+  color: var(--accent-primary);
+  border-color: var(--accent-primary);
+  background-color: rgba(0, 240, 255, 0.06);
+}
+
+.deroulant-btn:focus-visible,
+.accordeon > summary:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 3px;
+}
+
+.lbl-fermer {
+  display: none;
+}
+
+.deroulant[open] > .deroulant-btn .lbl-ouvrir {
+  display: none;
+}
+
+.deroulant[open] > .deroulant-btn .lbl-fermer {
+  display: inline;
+}
+
+.deroulant-contenu {
+  padding-top: 1.5rem;
+}
+
+.deroulant-contenu > :first-child {
+  margin-top: 0;
+}
+
+.deroulant-contenu > :last-child {
+  margin-bottom: 0;
+}
+
+/* documents côte à côte au lieu d'empilés */
+.deroulant-contenu .project-docs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+/* ---- Grands projets : vue repliée compacte ---- */
+.project-featured-text .project-subtitle {
+  margin-bottom: 0;
+}
+
+.project-featured-text .tech-stack {
+  margin: 1.25rem 0 0;
+}
+
+/* photo recadrée tant que le projet est replié, entière une fois déplié */
+.project-featured-visual .project-image img {
+  max-height: 380px;
+  object-fit: cover;
+}
+
+.featured-project:has(.deroulant[open]) .project-featured-visual .project-image img {
+  max-height: 1100px;
+}
+
+/* ---- Compétences : mots-clés repliés, même principe que les cartes projets ---- */
+.skill-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-card > p {
+  margin-bottom: 0;
+}
+
+.skill-card > .deroulant {
+  margin-top: auto;
+  padding-top: 1.25rem;
+}
+
+.skills-grid:has(.deroulant[open]) {
+  align-items: start;
+}
+
+/* ---- Petites cartes projets ---- */
+.project-card {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card > p {
+  margin-bottom: 0;
+}
+
+/* repliées : cartes de même hauteur, boutons alignés en bas */
+.project-card > .deroulant {
+  margin-top: auto;
+  padding-top: 1.25rem;
+}
+
+/* dès qu'une carte est dépliée, les voisines gardent leur hauteur naturelle */
+.projects-grid:has(.deroulant[open]) {
+  align-items: start;
+}
+
+.project-card .deroulant-contenu .project-tech-list {
+  min-height: 0;
+  margin: 0;
+}
+
+.project-card .deroulant-contenu .project-docs {
+  margin-top: 1rem;
+}
+
+.project-card .deroulant-contenu .project-image,
+.project-card .deroulant-contenu .project-image-placeholder {
+  margin-top: 1rem;
+}
+
+/* ---- ADM : moins d'espace entre le bouton et la capture ---- */
+#adm-pdm .project-featured-content {
+  gap: 2rem;
+}
+
+#adm-pdm .project-featured-visual {
+  margin-top: 0;
+}
+
+/* ---- Parcours ---- */
+.timeline-content .timeline-location {
+  margin-bottom: 0;
+}
+
+.timeline-content .deroulant {
+  margin-top: 1rem;
+}
+
+/* ---- À propos : accordéon ---- */
+.accordeon {
+  border-top: 1px solid var(--border-color);
+  interpolate-size: allow-keywords;
+}
+
+.accordeon:last-child {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.accordeon > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.4rem 0.25rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.accordeon > summary::-webkit-details-marker {
+  display: none;
+}
+
+.about-me-text .accordeon > summary h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  transition: color 0.2s ease;
+}
+
+.accordeon > summary:hover h3 {
+  color: var(--text-primary);
+}
+
+.accordeon > summary::after {
+  content: "";
+  flex-shrink: 0;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-right: 2px solid var(--accent-primary);
+  border-bottom: 2px solid var(--accent-primary);
+  transform: translateY(-3px) rotate(45deg);
+  transition: transform 0.25s ease;
+}
+
+.accordeon[open] > summary::after {
+  transform: translateY(3px) rotate(-135deg);
+}
+
+.accordeon-contenu {
+  padding: 0 0.25rem 1.75rem;
+}
+
+.about-me-text .accordeon-contenu p {
+  margin-bottom: 0;
+}
+
+.accordeon-contenu .passions-grid {
+  margin-top: 0;
+}
+
+/* ---- Animation d'ouverture (désactivée si l'utilisateur réduit les animations) ---- */
+@media (prefers-reduced-motion: no-preference) {
+  .deroulant::details-content,
+  .accordeon::details-content {
+    block-size: 0;
+    overflow-y: clip;
+    transition: block-size 0.35s ease, content-visibility 0.35s allow-discrete;
+  }
+
+  .deroulant[open]::details-content,
+  .accordeon[open]::details-content {
+    block-size: auto;
+  }
+
+  .deroulant[open] .deroulant-contenu,
+  .accordeon[open] .accordeon-contenu {
+    animation: deroule 0.35s ease;
+  }
+
+  .project-featured-visual .project-image img {
+    transition: max-height 0.45s ease, transform 0.3s ease;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .deroulant-btn::after,
+  .accordeon > summary::after {
+    transition: none;
+  }
+}
+
+@keyframes deroule {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* ---- Mobile : le badge passe au-dessus du titre au lieu de le chevaucher ---- */
+@media (max-width: 968px) {
+  .project-featured-badge {
+    position: static;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+
+  .featured-project {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* ---- Mobile : la page ne glisse plus sur le côté ---- */
+body {
+  overflow-x: clip;
+}
+
+@media (max-width: 640px) {
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+  }
+}
