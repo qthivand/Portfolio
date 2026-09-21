@@ -141,57 +141,69 @@
       
       <div class="about-me-content">
         <div class="about-me-text">
-          <h3>Qui suis-je ?</h3>
-          <p>
-            Passionné par l'électronique et les nouvelles technologies depuis mon plus jeune âge, j'ai toujours été 
-            fasciné par le fonctionnement des systèmes embarqués et la conception de circuits. Cette curiosité naturelle 
-            m'a poussé à explorer le monde de l'électronique à travers de nombreux projets personnels, de la simple LED 
-            clignotante à des systèmes plus complexes comme ma boîte noire pour moto.
-          </p>
-          
-          <h3>Pourquoi le BUT GEII ?</h3>
-          <p>
-            J'ai choisi le parcours Électronique et Systèmes Embarqués du BUT GEII car il combine parfaitement mes 
-            deux passions : <strong>l'électronique hardware</strong> et la <strong>programmation embarquée</strong>. 
-            Cette formation me permet d'acquérir des compétences, de la conception de circuits PCB sur Altium 
-            Designer à la programmation bas niveau de microcontrôleurs STM32, en passant par le traitement du signal 
-            et les communications sans fil.
-          </p>
-          
-          <h3>Mes passions</h3>
-          <div class="passions-grid">
-            <div class="passion-item">
-              <span class="passion-icon">🏍️</span>
-              <div>
-                <h4>Moto</h4>
-                <p>Passionné de deux-roues et de voitures, ce qui m'a inspiré pour mon projet de boîte noire embarquée</p>
+          <details class="accordeon">
+            <summary><h3>Qui suis-je ?</h3></summary>
+            <div class="accordeon-contenu">
+              <p>
+                Passionné par l'électronique et les nouvelles technologies depuis mon plus jeune âge, j'ai toujours été 
+                fasciné par le fonctionnement des systèmes embarqués et la conception de circuits. Cette curiosité naturelle 
+                m'a poussé à explorer le monde de l'électronique à travers de nombreux projets personnels, de la simple LED 
+                clignotante à des systèmes plus complexes comme ma boîte noire pour moto.
+              </p>
+            </div>
+          </details>
+
+          <details class="accordeon">
+            <summary><h3>Pourquoi le BUT GEII ?</h3></summary>
+            <div class="accordeon-contenu">
+              <p>
+                J'ai choisi le parcours Électronique et Systèmes Embarqués du BUT GEII car il combine parfaitement mes 
+                deux passions : <strong>l'électronique hardware</strong> et la <strong>programmation embarquée</strong>. 
+                Cette formation me permet d'acquérir des compétences, de la conception de circuits PCB sur Altium 
+                Designer à la programmation bas niveau de microcontrôleurs STM32, en passant par le traitement du signal 
+                et les communications sans fil.
+              </p>
+            </div>
+          </details>
+
+          <details class="accordeon">
+            <summary><h3>Mes passions</h3></summary>
+            <div class="accordeon-contenu">
+              <div class="passions-grid">
+                <div class="passion-item">
+                  <span class="passion-icon">🏍️</span>
+                  <div>
+                    <h4>Moto</h4>
+                    <p>Passionné de deux-roues et de voitures, ce qui m'a inspiré pour mon projet de boîte noire embarquée</p>
+                  </div>
+                </div>
+
+                <div class="passion-item">
+                  <span class="passion-icon">🔬</span>
+                  <div>
+                    <h4>Électronique</h4>
+                    <p>Conception de circuits, soudure, PCB design et prototypage de systèmes</p>
+                  </div>
+                </div>
+
+                <div class="passion-item">
+                  <span class="passion-icon">💡</span>
+                  <div>
+                    <h4>Domotique & IoT</h4>
+                    <p>Automatisation, objets connectés et systèmes intelligents pour la maison</p>
+                  </div>
+                </div>
+
+                <div class="passion-item">
+                  <span class="passion-icon">⚙️</span>
+                  <div>
+                    <h4>Systèmes Embarqués</h4>
+                    <p>Programmation de microcontrôleurs, FPGA et optimisation temps réel</p>
+                  </div>
+                </div>
               </div>
             </div>
-            
-            <div class="passion-item">
-              <span class="passion-icon">🔬</span>
-              <div>
-                <h4>Électronique</h4>
-                <p>Conception de circuits, soudure, PCB design et prototypage de systèmes</p>
-              </div>
-            </div>
-            
-            <div class="passion-item">
-              <span class="passion-icon">💡</span>
-              <div>
-                <h4>Domotique & IoT</h4>
-                <p>Automatisation, objets connectés et systèmes intelligents pour la maison</p>
-              </div>
-            </div>
-            
-            <div class="passion-item">
-              <span class="passion-icon">⚙️</span>
-              <div>
-                <h4>Systèmes Embarqués</h4>
-                <p>Programmation de microcontrôleurs, FPGA et optimisation temps réel</p>
-              </div>
-            </div>
-          </div>
+          </details>
         </div>
       </div>
     </div>
@@ -210,91 +222,147 @@
           <div class="skill-icon">⚡</div>
           <h3>Électronique</h3>
           <p>Conception et dimensionnement de circuits électriques et électroniques, filtrage analogique et numérique</p>
-          <div class="skill-tags">
-            <span class="tag">Altium Designer</span>
-            <span class="tag">PCB Design</span>
-            <span class="tag">PCB multi-couches 1-4</span>
-            <span class="tag">Filtrage analogique</span>
-            <span class="tag">Habilitation B1V</span>
-          </div>
+          <details class="deroulant">
+            <summary class="deroulant-btn">
+              <span class="lbl-ouvrir">Voir les détails</span>
+              <span class="lbl-fermer">Masquer les détails</span>
+            </summary>
+            <div class="deroulant-contenu">
+              <div class="skill-tags">
+                <span class="tag">Altium Designer</span>
+                <span class="tag">PCB Design</span>
+                <span class="tag">PCB multi-couches 1-4</span>
+                <span class="tag">Filtrage analogique</span>
+                <span class="tag">Habilitation B1V</span>
+              </div>
+            </div>
+          </details>
         </div>
         
         <div class="skill-card">
           <div class="skill-icon">🔧</div>
           <h3>Systèmes Embarqués</h3>
           <p>Programmation microcontrôleurs, manipulation de registres, communication SPI/I2C, ADC et DMA</p>
-          <div class="skill-tags">
-            <span class="tag">STM32 (M0+/M4)</span>
-            <span class="tag">Filtrage numérique</span>
-            <span class="tag">Arduino/ATMega</span>
-            <span class="tag">STM32CubeIDE</span>
-            <span class="tag">FPGA DE10-Lite</span>
-            <span class="tag">SoC ARM</span>
-            <span class="tag">Communication BT/WiFi</span>
-            <span class="tag">Programmation bas niveau</span>
-            <span class="tag">Noyau temps réel</span>
-          </div>
+          <details class="deroulant">
+            <summary class="deroulant-btn">
+              <span class="lbl-ouvrir">Voir les détails</span>
+              <span class="lbl-fermer">Masquer les détails</span>
+            </summary>
+            <div class="deroulant-contenu">
+              <div class="skill-tags">
+                <span class="tag">STM32 (M0+/M4)</span>
+                <span class="tag">Filtrage numérique</span>
+                <span class="tag">Arduino/ATMega</span>
+                <span class="tag">STM32CubeIDE</span>
+                <span class="tag">FPGA DE10-Lite</span>
+                <span class="tag">SoC ARM</span>
+                <span class="tag">Communication BT/WiFi</span>
+                <span class="tag">Programmation bas niveau</span>
+                <span class="tag">Noyau temps réel</span>
+              </div>
+            </div>
+          </details>
         </div>
         
         <div class="skill-card">
           <div class="skill-icon">💻</div>
           <h3>Programmation</h3>
           <p>Développement logiciel embarqué et applications industrielles</p>
-          <div class="skill-tags">
-            <span class="tag">C/C++</span>
-            <span class="tag">Python</span>
-            <span class="tag">C#</span>
-            <span class="tag">SQL</span>
-            <span class="tag">PHP</span>
-            <span class="tag">VHDL/Verilog</span>
-            <span class="tag">LabVIEW</span>
-            <span class="tag">HTML/CSS</span>
-          </div>
+          <details class="deroulant">
+            <summary class="deroulant-btn">
+              <span class="lbl-ouvrir">Voir les détails</span>
+              <span class="lbl-fermer">Masquer les détails</span>
+            </summary>
+            <div class="deroulant-contenu">
+              <div class="skill-tags">
+                <span class="tag">C/C++</span>
+                <span class="tag">Python</span>
+                <span class="tag">C#</span>
+                <span class="tag">SQL</span>
+                <span class="tag">PHP</span>
+                <span class="tag">VHDL/Verilog</span>
+                <span class="tag">LabVIEW</span>
+                <span class="tag">HTML/CSS</span>
+              </div>
+            </div>
+          </details>
         </div>
         
         <div class="skill-card">
           <div class="skill-icon">🏭</div>
           <h3>Automatisme & Industrie</h3>
           <p>Programmation automates, supervision et réseaux industriels</p>
-          <div class="skill-tags">
-            <span class="tag">SFC</span>
-            <span class="tag">Ladder</span>
-            <span class="tag">Structured Text</span>
-            <span class="tag">MATLAB</span>
-            <span class="tag">CompactRIO</span>
-          </div>
+          <details class="deroulant">
+            <summary class="deroulant-btn">
+              <span class="lbl-ouvrir">Voir les détails</span>
+              <span class="lbl-fermer">Masquer les détails</span>
+            </summary>
+            <div class="deroulant-contenu">
+              <div class="skill-tags">
+                <span class="tag">SFC</span>
+                <span class="tag">Ladder</span>
+                <span class="tag">Structured Text</span>
+                <span class="tag">MATLAB</span>
+                <span class="tag">CompactRIO</span>
+              </div>
+            </div>
+          </details>
         </div>
         
         <div class="skill-card">
           <div class="skill-icon">🖨️</div>
           <h3>Mécanique & Prototypage</h3>
           <p>Conception de pièces mécaniques et réalisation de prototypes fonctionnels</p>
-          <div class="skill-tags">
-            <span class="tag">CAO</span>
-            <span class="tag">Impression 3D</span>
-            <span class="tag">Conception mécanique</span>
-          </div>
+          <details class="deroulant">
+            <summary class="deroulant-btn">
+              <span class="lbl-ouvrir">Voir les détails</span>
+              <span class="lbl-fermer">Masquer les détails</span>
+            </summary>
+            <div class="deroulant-contenu">
+              <div class="skill-tags">
+                <span class="tag">CAO</span>
+                <span class="tag">Impression 3D</span>
+                <span class="tag">Conception mécanique</span>
+              </div>
+            </div>
+          </details>
         </div>
         
         <div class="skill-card">
           <div class="skill-icon">🌐</div>
           <h3>Réseaux & Communication</h3>
           <p>Configuration et gestion de réseaux industriels</p>
-          <div class="skill-tags">
-            <span class="tag">Routeurs Cisco</span>
-            <span class="tag">Protocoles industriels</span>
-          </div>
+          <details class="deroulant">
+            <summary class="deroulant-btn">
+              <span class="lbl-ouvrir">Voir les détails</span>
+              <span class="lbl-fermer">Masquer les détails</span>
+            </summary>
+            <div class="deroulant-contenu">
+              <div class="skill-tags">
+                <span class="tag">Routeurs Cisco</span>
+                <span class="tag">Protocoles industriels</span>
+              </div>
+            </div>
+          </details>
         </div>
         
         <div class="skill-card">
           <div class="skill-icon">🗣️</div>
           <h3>Langues</h3>
           <p></p>
-          <div class="skill-tags">
-            <span class="tag">Français (Natif)</span>
-            <span class="tag">Anglais (A2)</span>
-            <span class="tag">Espagnol (A1)</span>
-          </div>
+          <details class="deroulant">
+            <summary class="deroulant-btn">
+              <span class="lbl-ouvrir">Voir les détails</span>
+              <span class="lbl-fermer">Masquer les détails</span>
+            </summary>
+            <div class="deroulant-contenu">
+              <div class="skill-tags">
+                <span class="tag">Français (Natif)</span>
+                <span class="tag">Anglais (A2)</span>
+                <span class="tag">Espagnol (A1)</span>
+              </div>
+            </div>
+          </details>
         </div>
       </div>
     </div>
@@ -315,23 +383,7 @@
           <div class="project-featured-text">
             <h3>Boîte Noire Moto - SAE 2025/2026</h3>
             <p class="project-subtitle">Système embarqué d'acquisition de données pour deux-roues</p>
-            <p class="project-description">
-              Conception complète d'une boîte noire embarquée pour motos et vélos permettant l'acquisition 
-              et le traitement en temps réel de données d'un accéléromètre ADXL335 avec affichage sur bandeau LED.
-            </p>
-            
-            <div class="project-features">
-              <h4>Réalisations techniques :</h4>
-              <ul>
-                <li><strong>Conception électronique :</strong> Chaîne d'acquisition complète, PCB sur Altium Designer</li>
-                <li><strong>Programmation STM32 :</strong> Configuration registres, ADC en interruption + DMA</li>
-                <li><strong>Traitement du signal :</strong> Filtrage numérique, calibration accéléromètre</li>
-                <li><strong>Communications :</strong> SPI, Bluetooth pour transmission de données</li>
-                <li><strong>Interface utilisateur :</strong> Bandeau LED RGB + moniteur série</li>
-                <li><strong>Documentation :</strong> Dossier de conception, schémas de câblage, tests unitaires</li>
-              </ul>
-            </div>
-            
+
             <div class="tech-stack">
               <span class="tech-tag">STM32 L073RZ</span>
               <span class="tech-tag">ADXL335</span>
@@ -341,58 +393,62 @@
               <span class="tech-tag">SPI</span>
               <span class="tech-tag">Bluetooth</span>
             </div>
-            
-            <div class="project-docs">
-              <a href="/pdf/portfolio_BOITENOIRE.pdf" target="_blank" class="doc-link">
-                <span class="doc-icon">📄</span>
-                <span>Portfolio complet du projet</span>
-              </a>
-            </div>
-            <div class="project-docs">
-              <a href="https://drive.google.com/drive/folders/1XayAf4eO_d6GL1IMtBLJsSE4X19zk5FS?usp=drive_link" target="_blank" class="doc-link" download>
-                <span class="doc-icon">📁</span>
-                <span>Dossier de fabrication</span>
-              </a>
-            </div>
+
+            <details class="deroulant">
+              <summary class="deroulant-btn">
+                <span class="lbl-ouvrir">Voir les détails</span>
+                <span class="lbl-fermer">Masquer les détails</span>
+              </summary>
+              <div class="deroulant-contenu">
+                <p class="project-description">
+                  Conception complète d'une boîte noire embarquée pour motos et vélos permettant l'acquisition 
+                  et le traitement en temps réel de données d'un accéléromètre ADXL335 avec affichage sur bandeau LED.
+                </p>
+
+                <div class="project-features">
+                  <h4>Réalisations techniques :</h4>
+                  <ul>
+                    <li><strong>Conception électronique :</strong> Chaîne d'acquisition complète, PCB sur Altium Designer</li>
+                    <li><strong>Programmation STM32 :</strong> Configuration registres, ADC en interruption + DMA</li>
+                    <li><strong>Traitement du signal :</strong> Filtrage numérique, calibration accéléromètre</li>
+                    <li><strong>Communications :</strong> SPI, Bluetooth pour transmission de données</li>
+                    <li><strong>Interface utilisateur :</strong> Bandeau LED RGB + moniteur série</li>
+                    <li><strong>Documentation :</strong> Dossier de conception, schémas de câblage, tests unitaires</li>
+                  </ul>
+                </div>
+
+                <div class="project-docs">
+                  <a href="/pdf/portfolio_BOITENOIRE.pdf" target="_blank" class="doc-link">
+                    <span class="doc-icon">📄</span>
+                    <span>Portfolio complet du projet</span>
+                  </a>
+                  <a href="https://drive.google.com/drive/folders/1XayAf4eO_d6GL1IMtBLJsSE4X19zk5FS?usp=drive_link" target="_blank" class="doc-link">
+                    <span class="doc-icon">📁</span>
+                    <span>Dossier de fabrication</span>
+                  </a>
+                </div>
+              </div>
+            </details>
           </div>
-          
+
           <div class="project-featured-visual">
             <div class="project-image">
-              <img src="PhotoBN.png" alt="Système d'arrosage automatique" />
+              <img src="PhotoBN.png" alt="Boîte noire moto" />
 
               <p class="video-caption">Démonstration du système avec affichage LED et détection d'inclinaison</p>
             </div>
           </div>
         </div>
       </div>
-      
-   
+
+
       <div class="featured-project current-project" id="bras-robot">
         <div class="project-featured-badge" style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);">Projet en Cours</div>
         <div class="project-featured-content">
           <div class="project-featured-text">
             <h3>Bras Robot Fait Maison</h3>
             <p class="project-subtitle">Bras robotique 6 axes piloté par STM32, contrôlable via un site web</p>
-            <p class="project-description">
-              Conception et réalisation d'un bras robot 6 axes de A à Z : châssis dessiné et imprimé en 3D par mes soins, 
-              4 axes motorisés en NEMA 17 + réducteurs, et 2 axes sur la pince (ouverture/fermeture + roulis) entraînés 
-              par des servo-moteurs MG996R, pilotage des moteurs pas à pas via des drivers TMC2209 depuis une carte 
-              Nucleo STM32F334R8. Un module ESP32 assure la liaison Bluetooth et communique avec la STM32 en 
-              série/USART, le tout piloté depuis un site web de contrôle du bras.
-            </p>
-            
-            <div class="project-features">
-              <h4>Réalisations techniques :</h4>
-              <ul>
-                <li><strong>Mécanique :</strong> Châssis conçu en CAO et imprimé en 3D, 6 axes au total</li>
-                <li><strong>Motorisation :</strong> 4 axes NEMA 17 + réducteurs, pince en 2 axes (ouverture/fermeture + roulis) via servo-moteurs MG996R</li>
-                <li><strong>Pilotage moteurs :</strong> Drivers TMC2209 commandés en UART depuis la STM32</li>
-                <li><strong>Carte de commande :</strong> Nucleo STM32F334R8</li>
-                <li><strong>Connectivité :</strong> ESP32 en liaison Série/USART avec la STM32, Bluetooth</li>
-                <li><strong>Interface :</strong> Site web de contrôle du bras en temps réel</li>
-              </ul>
-            </div>
-            
+
             <div class="tech-stack">
               <span class="tech-tag">STM32 Nucleo F334R8</span>
               <span class="tech-tag">ESP32</span>
@@ -404,15 +460,43 @@
               <span class="tech-tag">Impression 3D</span>
               <span class="tech-tag">C/C++</span>
             </div>
-            
-            <div class="project-status">
-              <div class="status-badge">
-                <span class="status-dot"></span>
-                <span>En développement actif</span>
+
+            <details class="deroulant">
+              <summary class="deroulant-btn">
+                <span class="lbl-ouvrir">Voir les détails</span>
+                <span class="lbl-fermer">Masquer les détails</span>
+              </summary>
+              <div class="deroulant-contenu">
+                <p class="project-description">
+                  Conception et réalisation d'un bras robot 6 axes de A à Z : châssis dessiné et imprimé en 3D par mes soins, 
+                  4 axes motorisés en NEMA 17 + réducteurs, et 2 axes sur la pince (ouverture/fermeture + roulis) entraînés 
+                  par des servo-moteurs MG996R, pilotage des moteurs pas à pas via des drivers TMC2209 depuis une carte 
+                  Nucleo STM32F334R8. Un module ESP32 assure la liaison Bluetooth et communique avec la STM32 en 
+                  série/USART, le tout piloté depuis un site web de contrôle du bras.
+                </p>
+
+                <div class="project-features">
+                  <h4>Réalisations techniques :</h4>
+                  <ul>
+                    <li><strong>Mécanique :</strong> Châssis conçu en CAO et imprimé en 3D, 6 axes au total</li>
+                    <li><strong>Motorisation :</strong> 4 axes NEMA 17 + réducteurs, pince en 2 axes (ouverture/fermeture + roulis) via servo-moteurs MG996R</li>
+                    <li><strong>Pilotage moteurs :</strong> Drivers TMC2209 commandés en UART depuis la STM32</li>
+                    <li><strong>Carte de commande :</strong> Nucleo STM32F334R8</li>
+                    <li><strong>Connectivité :</strong> ESP32 en liaison Série/USART avec la STM32, Bluetooth</li>
+                    <li><strong>Interface :</strong> Site web de contrôle du bras en temps réel</li>
+                  </ul>
+                </div>
+
+                <div class="project-status">
+                  <div class="status-badge">
+                    <span class="status-dot"></span>
+                    <span>En développement actif</span>
+                  </div>
+                </div>
               </div>
-            </div>
+            </details>
           </div>
-          
+
           <div class="project-featured-visual">
             <div class="project-image">
               <img src="bras_robot.jpg" alt="Bras robot fait maison" />
@@ -420,7 +504,7 @@
           </div>
         </div>
       </div>
-      
+
 
       <div class="featured-project" id="adm-pdm">
         <div class="project-featured-badge">Stage - Hoggar Solution</div>
@@ -428,24 +512,7 @@
           <div class="project-featured-text">
             <h3>ARKADIA Directory Manager (ADM)</h3>
             <p class="project-subtitle">PDM, gestion d'affaires et suivi des non-conformités CAO</p>
-            <p class="project-description">
-              Bien plus qu'un simple PDM : développement d'une application de gestion des fichiers CAO 
-              (SolidWorks/CATIA/CREO) intégrant aussi un système de gestion d'affaires, un système de tickets 
-              de modification en cas de non-conformité CAO, et un accès centralisé à tous les documents utiles 
-              à la conception, déployée pour ARKADIA, Hoggar et Biossun.
-            </p>
-            
-            <div class="project-features">
-              <h4>Réalisations techniques :</h4>
-              <ul>
-                <li><strong>Gestion documentaire :</strong> Centralisation des fichiers CAO SolidWorks/CATIA/CREO</li>
-                <li><strong>Gestion d'affaires :</strong> Suivi des dossiers et affaires en cours</li>
-                <li><strong>Non-conformités :</strong> Système de tickets de modification CAO</li>
-                <li><strong>Interface :</strong> Application C# avec interface WebView2 (HTML/CSS/JS)</li>
-                <li><strong>Base de données :</strong> Access/SQL</li>
-              </ul>
-            </div>
-            
+
             <div class="tech-stack">
               <span class="tech-tag">C#</span>
               <span class="tech-tag">WebView2</span>
@@ -454,18 +521,42 @@
               <span class="tech-tag">Gestion de fichiers CAO</span>
             </div>
 
-            <div class="project-docs">
-              <a href="https://docs.google.com/presentation/d/14yKzUr9mFe1CJOTjsUNvW2CsrYt_LciZHV3tyeDbNYo/edit?usp=sharing" target="_blank" class="doc-link">
-                <span class="doc-icon">📊</span>
-                <span>Présentation du projet</span>
-              </a>
-            </div>
-            <div class="project-docs">
-              <a href="https://docs.google.com/document/d/14FUCSRN-BDAZZExdv2qbbf8jsH1g0HTOK-udjzMuMLI/edit?usp=sharing" target="_blank" class="doc-link">
-                <span class="doc-icon">📄</span>
-                <span>Rapport de stage</span>
-              </a>
-            </div>
+            <details class="deroulant">
+              <summary class="deroulant-btn">
+                <span class="lbl-ouvrir">Voir les détails</span>
+                <span class="lbl-fermer">Masquer les détails</span>
+              </summary>
+              <div class="deroulant-contenu">
+                <p class="project-description">
+                  Bien plus qu'un simple PDM : développement d'une application de gestion des fichiers CAO 
+                  (SolidWorks/CATIA/CREO) intégrant aussi un système de gestion d'affaires, un système de tickets 
+                  de modification en cas de non-conformité CAO, et un accès centralisé à tous les documents utiles 
+                  à la conception, déployée pour ARKADIA, Hoggar et Biossun.
+                </p>
+
+                <div class="project-features">
+                  <h4>Réalisations techniques :</h4>
+                  <ul>
+                    <li><strong>Gestion documentaire :</strong> Centralisation des fichiers CAO SolidWorks/CATIA/CREO</li>
+                    <li><strong>Gestion d'affaires :</strong> Suivi des dossiers et affaires en cours</li>
+                    <li><strong>Non-conformités :</strong> Système de tickets de modification CAO</li>
+                    <li><strong>Interface :</strong> Application C# avec interface WebView2 (HTML/CSS/JS)</li>
+                    <li><strong>Base de données :</strong> Access/SQL</li>
+                  </ul>
+                </div>
+
+                <div class="project-docs">
+                  <a href="https://docs.google.com/presentation/d/14yKzUr9mFe1CJOTjsUNvW2CsrYt_LciZHV3tyeDbNYo/edit?usp=sharing" target="_blank" class="doc-link">
+                    <span class="doc-icon">📊</span>
+                    <span>Présentation du projet</span>
+                  </a>
+                  <a href="https://docs.google.com/document/d/14FUCSRN-BDAZZExdv2qbbf8jsH1g0HTOK-udjzMuMLI/edit?usp=sharing" target="_blank" class="doc-link">
+                    <span class="doc-icon">📄</span>
+                    <span>Rapport de stage</span>
+                  </a>
+                </div>
+              </div>
+            </details>
           </div>
 
           <div class="project-featured-visual">
@@ -476,101 +567,147 @@
         </div>
       </div>
 
-      <div class="projects-grid">
+      <div class="projects-grid" id="autres-projets">
         <div class="project-card" id="serrure-rfid">
           <div class="project-label">Systèmes Embarqués</div>
           <h3>Serrure RFID</h3>
           <p>Système de contrôle d'accès par carte RFID avec gestion de relays</p>
-          <ul class="project-tech-list">
-            <li>Programmation Arduino</li>
-            <li>Manipulation de registres</li>
-            <li>Gestion de relays</li>
-            <li>Système de sécurité</li>
-          </ul>
-          <div class="project-docs" target="_blank" class="doc-link">
-            <a href="/pdf/Projet_Sae_RFID_Thivand_Buisson.zip" target="_blank" class="doc-link" download>
-              <span class="doc-icon">📁</span>
-              <span>Dossier d'étude</span>
-            </a>
-          </div>
+          <details class="deroulant">
+            <summary class="deroulant-btn">
+              <span class="lbl-ouvrir">Voir les détails</span>
+              <span class="lbl-fermer">Masquer les détails</span>
+            </summary>
+            <div class="deroulant-contenu">
+              <ul class="project-tech-list">
+                <li>Programmation Arduino</li>
+                <li>Manipulation de registres</li>
+                <li>Gestion de relays</li>
+                <li>Système de sécurité</li>
+              </ul>
+              <div class="project-docs">
+                <a href="/pdf/Projet_Sae_RFID_Thivand_Buisson.zip" target="_blank" class="doc-link" download>
+                  <span class="doc-icon">📁</span>
+                  <span>Dossier d'étude</span>
+                </a>
+              </div>
+            </div>
+          </details>
         </div>
 
         <div class="project-card" id="bass-boost">
           <div class="project-label">Électronique Analogique</div>
           <h3>Bass Boost / High Boost</h3>
           <p>Conception de filtres audio analogiques pour amplification sélective de fréquences</p>
-          <ul class="project-tech-list">
-            <li>Filtrage analogique</li>
-            <li>Conception de circuits</li>
-            <li>Traitement du signal audio</li>
-          </ul>
-          <div class="project-docs" target="_blank" class="doc-link">
-            <a href="/pdf/PrjBassBoost_Elec_2024-2025_THIVAND_DELIEUVIN.pdf" target="_blank" class="doc-link">
-              <span class="doc-icon">📄</span>
-              <span>Document d'étude</span>
-            </a>
-          </div>
+          <details class="deroulant">
+            <summary class="deroulant-btn">
+              <span class="lbl-ouvrir">Voir les détails</span>
+              <span class="lbl-fermer">Masquer les détails</span>
+            </summary>
+            <div class="deroulant-contenu">
+              <ul class="project-tech-list">
+                <li>Filtrage analogique</li>
+                <li>Conception de circuits</li>
+                <li>Traitement du signal audio</li>
+              </ul>
+              <div class="project-docs">
+                <a href="/pdf/PrjBassBoost_Elec_2024-2025_THIVAND_DELIEUVIN.pdf" target="_blank" class="doc-link">
+                  <span class="doc-icon">📄</span>
+                  <span>Document d'étude</span>
+                </a>
+              </div>
+            </div>
+          </details>
         </div>
 
         <div class="project-card">
           <div class="project-label">Électronique de Puissance</div>
           <h3>Amplificateur Audio</h3>
           <p>Réalisation d'un amplificateur de puissance pour applications audio</p>
-          <ul class="project-tech-list">
-            <li>Amplification de puissance</li>
-            <li>Dimensionnement thermique</li>
-            <li>Tests de performance</li>
-            <br>
-          </ul>
-          <div class="project-docs" target="_blank" class="doc-link">
-            <a href="/pdf/compte rendu saé amplis audio.pdf" target="_blank" class="doc-link">
-              <span class="doc-icon">📄</span>
-              <span>Document d'étude</span>
-            </a>
-          </div>
+          <details class="deroulant">
+            <summary class="deroulant-btn">
+              <span class="lbl-ouvrir">Voir les détails</span>
+              <span class="lbl-fermer">Masquer les détails</span>
+            </summary>
+            <div class="deroulant-contenu">
+              <ul class="project-tech-list">
+                <li>Amplification de puissance</li>
+                <li>Dimensionnement thermique</li>
+                <li>Tests de performance</li>
+              </ul>
+              <div class="project-docs">
+                <a href="/pdf/compte rendu saé amplis audio.pdf" target="_blank" class="doc-link">
+                  <span class="doc-icon">📄</span>
+                  <span>Document d'étude</span>
+                </a>
+              </div>
+            </div>
+          </details>
         </div>
 
         <div class="project-card">
           <div class="project-label">Automatisme</div>
           <h3>Distributeur de Boisson</h3>
           <p>Système automatisé de distribution avec gestion de commandes</p>
-          <ul class="project-tech-list">
-            <li>Câblage</li>
-            <li>Programmation microcontrôleur</li>
-            <li>Interface homme-machine</li>
-          </ul>
-          <div class="project-image-placeholder">
-            <span>📷 Photo à venir</span>
-          </div>
+          <details class="deroulant">
+            <summary class="deroulant-btn">
+              <span class="lbl-ouvrir">Voir les détails</span>
+              <span class="lbl-fermer">Masquer les détails</span>
+            </summary>
+            <div class="deroulant-contenu">
+              <ul class="project-tech-list">
+                <li>Câblage</li>
+                <li>Programmation microcontrôleur</li>
+                <li>Interface homme-machine</li>
+              </ul>
+              <div class="project-image-placeholder">
+                <span>📷 Photo à venir</span>
+              </div>
+            </div>
+          </details>
         </div>
 
         <div class="project-card">
           <div class="project-label">IoT</div>
           <h3>Arrosage Automatique</h3>
           <p>Système intelligent d'arrosage avec capteurs et microcontrôleurs</p>
-          <ul class="project-tech-list">
-            <li>Découverte microcontrôleurs</li>
-            <li>Capteurs d'humidité</li>
-            <li>Automatisation</li>
-          </ul>
-          <div class="project-image">
-            <img src="FPGA.png" alt="Système d'arrosage automatique" />
-          </div>
+          <details class="deroulant">
+            <summary class="deroulant-btn">
+              <span class="lbl-ouvrir">Voir les détails</span>
+              <span class="lbl-fermer">Masquer les détails</span>
+            </summary>
+            <div class="deroulant-contenu">
+              <ul class="project-tech-list">
+                <li>Découverte microcontrôleurs</li>
+                <li>Capteurs d'humidité</li>
+                <li>Automatisation</li>
+              </ul>
+              <div class="project-image">
+                <img src="FPGA.png" alt="Système d'arrosage automatique" loading="lazy" />
+              </div>
+            </div>
+          </details>
         </div>
-
 
         <div class="project-card">
           <div class="project-label">Électronique</div>
           <h3>Thermomètre Digital</h3>
           <p>Conception d'un thermomètre numérique avec affichage</p>
-          <ul class="project-tech-list">
-            <li>Soudure de composants</li>
-            <li>Acquisition de température</li>
-            <li>Affichage numérique</li>
-          </ul>
-          <div class="project-image">
-            <img src="thermo2.jpg" alt="Thermomètre digital" />
-          </div>
+          <details class="deroulant">
+            <summary class="deroulant-btn">
+              <span class="lbl-ouvrir">Voir les détails</span>
+              <span class="lbl-fermer">Masquer les détails</span>
+            </summary>
+            <div class="deroulant-contenu">
+              <ul class="project-tech-list">
+                <li>Soudure de composants</li>
+                <li>Acquisition de température</li>
+                <li>Affichage numérique</li>
+              </ul>
+              <div class="project-image">
+                <img src="thermo2.jpg" alt="Thermomètre digital" loading="lazy" />
+              </div>
+            </div>
+          </details>
         </div>
       </div>
       </div>
@@ -592,15 +729,23 @@
             <span class="timeline-date">6 Avril - 19 Juin 2026</span>
             <h3>Stage 2ème année BUT - Développement PDM</h3>
             <p class="timeline-location">Hoggar Solution - Pringy</p>
-            <p class="timeline-description">
-              Développement d'un PDM (Product Data Management) en C# et SQL, avec une interface HTML/CSS/JS.
-              Découverte du fonctionnement d'un bureau d'études mécanique.
-            </p>
             <div class="competences-acquises">
               <span class="comp-tag">C#</span>
               <span class="comp-tag">SQL</span>
               <span class="comp-tag">HTML/CSS/JS</span>
             </div>
+            <details class="deroulant">
+              <summary class="deroulant-btn">
+                <span class="lbl-ouvrir">Voir les détails</span>
+                <span class="lbl-fermer">Masquer les détails</span>
+              </summary>
+              <div class="deroulant-contenu">
+                <p class="timeline-description">
+                  Développement d'un PDM (Product Data Management) en C# et SQL, avec une interface HTML/CSS/JS.
+                  Découverte du fonctionnement d'un bureau d'études mécanique.
+                </p>
+              </div>
+            </details>
           </div>
         </div>
 
@@ -611,13 +756,21 @@
             <h3>BUT Génie Électrique et Informatique Industrielle</h3>
             <p class="timeline-subtitle">Parcours Électronique et Systèmes Embarqués</p>
             <p class="timeline-location">IUT d'Annecy</p>
-            <p class="timeline-description">
-              Formation complète en électronique, systèmes embarqués, automatisme et informatique industrielle.
-              Projets techniques, stages en entreprise et développement de compétences professionnelles.
-            </p>
+            <details class="deroulant">
+              <summary class="deroulant-btn">
+                <span class="lbl-ouvrir">Voir les détails</span>
+                <span class="lbl-fermer">Masquer les détails</span>
+              </summary>
+              <div class="deroulant-contenu">
+                <p class="timeline-description">
+                  Formation complète en électronique, systèmes embarqués, automatisme et informatique industrielle.
+                  Projets techniques, stages en entreprise et développement de compétences professionnelles.
+                </p>
+              </div>
+            </details>
           </div>
         </div>
-        
+
         <div class="timeline-item">
           <div class="timeline-marker formation"></div>
           <div class="timeline-content">
@@ -627,7 +780,6 @@
             <p class="timeline-location">Lycée Louis Lachenal - Argonay</p>
           </div>
         </div>
-        
 
         <div class="timeline-item">
           <div class="timeline-marker experience"></div>
@@ -635,59 +787,91 @@
             <span class="timeline-date">Juillet 2025 - En cours</span>
             <h3>Employé Polyvalent - Caissier</h3>
             <p class="timeline-location">Auchan</p>
-            <p class="timeline-description">
-              Gestion de caisse, caisse libre-service et mise en rayon.
-            </p>
             <div class="competences-acquises">
               <span class="comp-tag">Relations clients</span>
               <span class="comp-tag">Rigueur</span>
             </div>
+            <details class="deroulant">
+              <summary class="deroulant-btn">
+                <span class="lbl-ouvrir">Voir les détails</span>
+                <span class="lbl-fermer">Masquer les détails</span>
+              </summary>
+              <div class="deroulant-contenu">
+                <p class="timeline-description">
+                  Gestion de caisse, caisse libre-service et mise en rayon.
+                </p>
+              </div>
+            </details>
           </div>
         </div>
-        
+
         <div class="timeline-item">
           <div class="timeline-marker experience"></div>
           <div class="timeline-content">
             <span class="timeline-date">Juin - Juillet 2024</span>
             <h3>Employé Polyvalent Restauration</h3>
             <p class="timeline-location">Il Veni Vidi Pizzi - Groisy</p>
-            <p class="timeline-description">
-              Préparation, service restauration, plonge et cuisine.
-            </p>
             <div class="competences-acquises">
               <span class="comp-tag">Esprit d'équipe</span>
               <span class="comp-tag">Rigueur</span>
               <span class="comp-tag">Règles d'hygiène</span>
             </div>
+            <details class="deroulant">
+              <summary class="deroulant-btn">
+                <span class="lbl-ouvrir">Voir les détails</span>
+                <span class="lbl-fermer">Masquer les détails</span>
+              </summary>
+              <div class="deroulant-contenu">
+                <p class="timeline-description">
+                  Préparation, service restauration, plonge et cuisine.
+                </p>
+              </div>
+            </details>
           </div>
         </div>
-        
+
         <div class="timeline-item">
           <div class="timeline-marker experience"></div>
           <div class="timeline-content">
             <span class="timeline-date">Sept - Nov 2023</span>
             <h3>Employé Polyvalent Restauration</h3>
             <p class="timeline-location">Beaujour et Bonsoir - Villy-le-Pelloux</p>
-            <p class="timeline-description">
-              Préparation service restauration et plonge.
-            </p>
             <div class="competences-acquises">
               <span class="comp-tag">Esprit d'équipe</span>
               <span class="comp-tag">Règles d'hygiène</span>
             </div>
+            <details class="deroulant">
+              <summary class="deroulant-btn">
+                <span class="lbl-ouvrir">Voir les détails</span>
+                <span class="lbl-fermer">Masquer les détails</span>
+              </summary>
+              <div class="deroulant-contenu">
+                <p class="timeline-description">
+                  Préparation service restauration et plonge.
+                </p>
+              </div>
+            </details>
           </div>
         </div>
-        
+
         <div class="timeline-item">
           <div class="timeline-marker experience"></div>
           <div class="timeline-content">
             <span class="timeline-date">21 - 25 Février 2022</span>
             <h3>Stage d'Observation</h3>
             <p class="timeline-location">M2O - Argonay</p>
-            <p class="timeline-description">
-              Découverte des différents services d'entreprise : RH, commercial, chef de projet, 
-              ingénieur mécanique, ingénieur automatisme, atelier.
-            </p>
+            <details class="deroulant">
+              <summary class="deroulant-btn">
+                <span class="lbl-ouvrir">Voir les détails</span>
+                <span class="lbl-fermer">Masquer les détails</span>
+              </summary>
+              <div class="deroulant-contenu">
+                <p class="timeline-description">
+                  Découverte des différents services d'entreprise : RH, commercial, chef de projet, 
+                  ingénieur mécanique, ingénieur automatisme, atelier.
+                </p>
+              </div>
+            </details>
           </div>
         </div>
       </div>
@@ -724,7 +908,7 @@
             </div>
           </a>
           
-          <a href="tel:+33768811307" class="contact-card">
+          <a href="tel:+33668136168" class="contact-card">
             <span class="contact-icon">📱</span>
             <div class="contact-info">
               <span class="contact-label">Téléphone</span>
